@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":rxjava:test" external.linked.project.path="$MODULE_DIR$/../../../RxJava" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="rxsandbox" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
+    <output-test url="file://$MODULE_DIR$/../../../RxJava/build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../RxJava/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../RxJava/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../RxJava/src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="rxjava_main" />
+    <orderEntry type="library" name="Gradle: junit:junit-dep:4.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.mockito:mockito-core:1.8.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.objenesis:objenesis:1.0" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="rxjava_main" />
+</module>
