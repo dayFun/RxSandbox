@@ -29,7 +29,6 @@ public class SubscribeOn_ObserveOnTest {
     public void testWhenSubscribeOnWithSchedulerUsedThenTestFinishesBeforeObservableEmitsAnything() throws Exception {
         numberStringsObservable.subscribeOn(Schedulers.newThread())
                                .subscribe(stringTestSubscriber);
-
         assertThat(stringTestSubscriber.getOnNextEvents().size(), is(equalTo(0)));
     }
 

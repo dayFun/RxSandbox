@@ -76,7 +76,7 @@ class MyClass {
 
 ### map() vs flatMap()
 
-![flatMap()](src/images/rx_flatmap.png)
+![flatMap()](RxSandbox/images/rx_flatmap.png)
 
 Look at the types:
 
@@ -97,8 +97,8 @@ Look at the types:
 * flatMap -> **Unordered** merge
 * concatMap -> **Ordered** merge
 
-![concatMap() vs. flatMap()](src/images/rx_flatMap_vs_concatMap.png)
-![concatMap() vs. flatMap()](src/images/rx_concatMap.png)
+![concatMap() vs. flatMap()](RxSandbox/images/rx_flatMap_vs_concatMap.png)
+![concatMap() vs. flatMap()](RxSandbox/images/rx_concatMap.png)
 
 ### toList()
 
@@ -106,13 +106,13 @@ Look at the types:
 * "Why does nothing happen?!?"
 * Missing onCompleted()
 
-![toList()](src/images/rx_toList.png)
+![toList()](RxSandbox/images/rx_toList.png)
 
 **\*\*It's worth being worried that some operators pay attention to terminal event in order to determine their behavior\*\***
 
 #### List of Lists 
 
-![Lists of Lists](src/images/rx_list_of_lists.png) 
+![Lists of Lists](RxSandbox/images/rx_list_of_lists.png) 
 
 ### take(1) vs. first()
 
