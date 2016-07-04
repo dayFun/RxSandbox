@@ -105,8 +105,6 @@ So we're inside our `Observable<String>`, we take in an `Operator<Integer, Strin
 
 Unlike the `map()` function, the `Operator` has its types seemingly backwards, but they are in the other direction: The type that we want **out** comes first, and the  type that is going **in** comes second.
   
-`Operator` is just a type-safe sugar over a `Func1`, except this function is from a `Subscriber` to another `Subscriber`
-
 ```java
 /**
  * Operator function for lifting into an Observable.
@@ -117,3 +115,18 @@ public interface Operator<R, T> extends Func1<Subscriber<? super R>, Subscriber<
     
 }
 ```
+`Operator` is just a type-safe sugar over a `Func1`, except this function transforms a `Subscriber` to another `Subscriber` of those two types.
+ 
+This is where we see how the `Subscribers` that are above us in the stream and the `Subscribers` that are  coming in below us are going to get hooked together.
+ 
+An `Operator` is the function that takes a `Subscriber` of one type and converts it to a `Subscriber` of another type so that the stream can be connected together. 
+
+```java
+Observable.just("Hi!")                            // <--- Subscriber<String> 
+          .map(s -< s.length())                   // <--- Func1<Subscriber<Integer>, Subscriber<String>>
+          .subscribe(new Action1<Integer> {       // <--- Subscriber<Integer> 
+            ...
+          });  
+```
+
+# Pause at ~27:00 

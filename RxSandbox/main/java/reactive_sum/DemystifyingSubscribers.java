@@ -14,10 +14,21 @@ public class DemystifyingSubscribers {
         iteration3();
     }
 
+    public String doSomething() {
+        String foo = "bar";
+        //do stuff with foo
+        return foo;
+    }
+
     public static void iteration1() {
         Observable<String> observable = Observable.just("Hi!");
         Subscription subscription = observable.subscribe();
         System.out.println(subscription);
+
+        observable.subscribe();
+        observable.subscribe();
+        observable.subscribe();
+        observable.subscribe();
     }
 
     public static void iteration2() {
